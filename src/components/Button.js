@@ -2,8 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../css/Button.css";
 
-const Button = ({ text, variant }) => {
-  return <button className={`btn btn-${variant}`}>{text}</button>;
+const Button = ({ text, variant, action }) => {
+  return (
+    <button className={`btn btn-${variant}`} onClick={action}>
+      {text}
+    </button>
+  );
 };
 
 Button.propTypes = {
