@@ -6,8 +6,8 @@ const TodoItem = () => {
     <div style={todoItemStyle}>
       <p>title item</p>
       <div>
-        <Button />
-        <Button />
+        <Button text="edit" variant="success" />
+        <Button text="delete" variant="danger" />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import Button from "./components/Button";
 import FormInput from "./components/FormInput";
 import TodoItem from "./components/TodoItem";
 import "./css/App.css";
