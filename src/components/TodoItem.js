@@ -1,16 +1,21 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Button from "./Button";
 
-const TodoItem = () => {
+const TodoItem = ({ todo }) => {
   return (
     <div style={todoItemStyle}>
-      <p>title item</p>
+      <p>{todo.title}</p>
       <div>
         <Button text="edit" variant="success" />
         <Button text="delete" variant="danger" />
       </div>
     </div>
   );
+};
+
+TodoItem.propTypes = {
+  todo: PropTypes.object.isRequired,
 };
 
 export default TodoItem;
